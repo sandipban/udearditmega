@@ -12,4 +12,4 @@ byname_values = grade_byname.values()
 avg = sum(byname_values)/ len(byname_values)
 print(avg)
 print (grade_byname.values(), grade_byname.keys())
-#These are above are upto lesson 22 of Ardit.Feel good. Really Good.
+#These are above are upto lesson 22 of Ardit.Feel good. 
