@@ -26,10 +26,34 @@
 #         if num > 50 :
 #             print(num)
 
-phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"} #Looping through the dict.
+# phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"} #Looping through the dict.
 
-for key, value in phone_numbers.items():
-    print(f'{key} has the phone number : { value}')
+# for key, value in phone_numbers.items():
+#     print(f'{key} has the phone number : { value}')
 
-for num in phone_numbers.values():
-    print(f'00{num[1:]}')
+# for num in phone_numbers.values():
+#     print(f'00{num[1:]}')
+
+## Ardit problem 60
+    
+def txtmaker(txte):
+    qtn = ('Who','Which','What')
+    txte = txte.capitalize()
+    if txte.startswith(qtn):
+        return(f'{txte}?')
+
+    else:
+        return(f'{txte}.')
+    
+print(txtmaker('me is this'))
+
+content = []
+while True :
+    usr_input = input('Say something :')
+    if usr_input == '\end':
+        break
+    else:
+        content.append(txtmaker(usr_input))
+
+print(' '.join(content))
+
