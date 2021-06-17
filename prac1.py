@@ -55,5 +55,5 @@ while True :
     else:
         content.append(txtmaker(usr_input))
 
-print(' '.join(content))
+print(' '.join(content)) 
 
