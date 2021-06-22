@@ -37,7 +37,7 @@
 ## Ardit problem 60
     
 def txtmaker(txte):
-    qtn = ('Who','Which','What')
+    qtn = ('Who','Which','What','When', 'Where', 'How')
     txte = txte.capitalize()
     if txte.startswith(qtn):
         return(f'{txte}?')
@@ -45,8 +45,6 @@ def txtmaker(txte):
     else:
         return(f'{txte}.')
     
-print(txtmaker('me is this'))
-
 content = []
 while True :
     usr_input = input('Say something :')
