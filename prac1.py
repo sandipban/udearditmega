@@ -36,22 +36,40 @@
 
 ## Ardit problem 60
     
-def txtmaker(txte):
-    qtn = ('Who','Which','What','When', 'Where', 'How')
-    txte = txte.capitalize()
-    if txte.startswith(qtn):
-        return(f'{txte}?')
+# def txtmaker(txte):
+#     qtn = ('Who','Which','What','When', 'Where', 'How')
+#     txte = txte.capitalize()
+#     if txte.startswith(qtn):
+#         return(f'{txte}?')
 
-    else:
-        return(f'{txte}.')
+#     else:
+#         return(f'{txte}.')
     
-content = []
-while True :
-    usr_input = input('Say something :')
-    if usr_input == '\end':
-        break
-    else:
-        content.append(txtmaker(usr_input))
+# content = []
+# while True :
+#     usr_input = input('Say something :')
+#     if usr_input == '\end':
+#         break
+#     else:
+#         content.append(txtmaker(usr_input))
 
-print(' '.join(content)) 
+# print(' '.join(content)) 
 
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+word_lst = original_str.split(' ')
+num_words_list = []
+num_word = 0
+for word in word_lst:
+    num_word = len(word)
+    num_words_list.append(num_word)
+print(num_words_list)
+
+'''Trolls are attacking your comment section! CODEWARS DASH BOARD CHALLANGE
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+'''
